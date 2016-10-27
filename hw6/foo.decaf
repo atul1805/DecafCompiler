@@ -1,0 +1,16 @@
+class C {
+static int fact(int n){
+	if (n <= 2){
+		return 1;
+	}
+	else{
+		return (C.fact(n-1) + C.fact(n-2));
+	}
+}
+
+
+public static void main(){
+	int i;
+	i= C.fact(25);
+}
+}
